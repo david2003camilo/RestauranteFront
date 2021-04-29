@@ -10,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { NegociosComponent } from './negocios/negocios.component';
 import { CarritoComponent } from './carrito/carrito.component';
+import { DetallesPedidoComponent } from './detalles-pedido/detalles-pedido.component';
+import { FormularioPedidoComponent } from './formulario-pedido/formulario-pedido.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { CarritoComponent } from './carrito/carrito.component';
     NavComponent,
     HomeComponent,
     FooterComponent,
-    NosotrosComponent
+    NosotrosComponent,
+    DetallesPedidoComponent,
+    FormularioPedidoComponent
   ],
   imports: [
     BrowserModule,

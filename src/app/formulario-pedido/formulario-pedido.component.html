@@ -1,0 +1,40 @@
+<body>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <h1>Porfavor complete los datos del registros</h1>
+    <p>Asegurese de que la informacion sea correcta</p>
+    <section>
+      <p>
+        <label for="nombres">
+            <span>Nombres:</span>
+        </label>
+        <input formControlName="nombres" type="text" id="name" name="nombres">
+      </p>
+      <p>
+        <label for="apellidos">
+            <span>apellidos:</span>
+        </label>
+        <input formControlName="apellidos" type="text" id="name" name="apellidos">
+      </p>
+      <p>
+        <label for="telefono">
+          <span>Telefono:</span>
+        </label>
+        <input formControlName="telefono" type="number" id="name" name="telefono">
+      </p>
+      <p>
+        <label for="correo electronico">
+          <span>Correo electronico:</span>
+        </label>
+        <input formControlName="correo" type="email" id="name" name="correo">
+      </p>
+      <p>
+        <label for="direccion">
+            <span>Direccion:</span>
+        </label>
+        <input formControlName="direccion" type="text" id="name" name="direccion">
+      </p>
+      <p><button type="submit">Comprar</button></p>
+    </section>
+  </form>
+</body>
