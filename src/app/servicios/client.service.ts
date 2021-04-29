@@ -14,7 +14,7 @@ export class ClientService {
     let config:any = {
       responseType: "json"
     }
-    
+
     if(token){
       const heder =new HttpHeaders().set('Authorization', `Bearer ${token}`)
       config['herders'] = heder
@@ -22,5 +22,16 @@ export class ClientService {
 
 
     return this.http.get(route, config);
+  }
+
+  /*Servicio del formulario de pedido*/
+  postRequestFormularioPedido(route: string, data?:any) {
+    let config:any = {
+      responseType: "json"
+    }
+    const header = new HttpHeaders().set('Authorization', '57ydf544ljka559ahjkfgd1');
+    config["header"] = header;
+
+    return this.http.post(route, data, config);
   }
 }

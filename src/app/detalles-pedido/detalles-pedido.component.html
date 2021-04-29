@@ -1,0 +1,37 @@
+<section>
+  <h3 class="titulo">
+    Detalles del pedido
+  </h3>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Producto</th>
+        <th scope="col">Cantidad</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Pastel de chocolate</td>
+        <td>4</td>
+        <td>2.000</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Torta de naranja</td>
+        <td>2</td>
+        <td>3.000</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>capuccino</td>
+        <td>2</td>
+        <td>6.000</td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-secondary btn-lg">Seguir Comprando</button><button type="submit" class="btn btn-secondary btn-lg" [routerLink]="['/pedido']">Continuar</button>
+</section>
